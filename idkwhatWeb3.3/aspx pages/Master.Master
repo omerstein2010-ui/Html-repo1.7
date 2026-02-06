@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="idkwhatWeb2._2.aspx_pages.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="file:///c:\users\avior\source\repos\idkwhatweb2.2\idkwhatweb2.2\aspx%20pages\design\styles2.css" rel="stylesheet" />
+        <link href="file:///c:\users\avior\source\repos\idkwhatweb2.2\idkwhatweb2.2\aspx%20pages\design\styles3.css" rel="stylesheet" />
+        <script src="file:///c:\users\avior\source\repos\idkwhatweb2.2\idkwhatweb2.2\aspx%20pages\script2.js"></script>
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server">
+    <footer display="none">.</footer>
+    <div lang="he" dir="rtl">
+        <h1 id="h11">קלדראייסר</h1>
+        <div lang="en" dir="ltr">
+            <div class="form">
+                <div lang="he" dir="rtl">
+                    <button id="bt4" onclick="location.href='#crt'" style="display:none;" runat="server">צור משתמש</button>
+                </div>
+            </div>
+            <div class="form">
+                <div lang="he" dir="rtl">
+                    <button id="bt8" onclick="location.href='#lgn'" style="display:none;" runat="server">כנס למשתמש</button>
+                </div>
+            </div>
+            <div lang="he" dir="rtl">
+                <a id="lnk" href="pitStoPage.aspx">פיט סטוף</a>
+                <a id="lnk2" href="aboutPage.aspx" onclick="abtMns()">לגבי</a>
+                <a id="lnk3" href="cntUsPage.aspx">צור קשר</a>
+            </div>
+        </div>
+    </div>
+    <img src="image/typewriteracer1.0.png" id="img1" />
+    <img src="image/abtTopPage1.1.png" id="img9" style="z-index:0;" />
+    <img src="image/typeracer bt block1.0.png" id="img16" style="z-index:1;" runat="server"/>
+    <img src="image/typeracer mask1.0.png" id="img17" style="display:none;z-index:1" runat="server"/>
+    <p id="usrnP1" style="position:fixed;top:45px;left:1371px;font-size:21px;color:white;display:none;z-index:4;" runat="server"><%=$"{msg} ({ncn})" %></p>
+    <div class="form">
+        <button id="bt12"><img src="image/typeracer act exit1.0.png" id="img15" onclick="bts()" style="display:none;" runat="server" /></button>
+    </div>
+    <form id="frm4" method="Post">
+        <textarea id="idkwhatxtar6" name="idkwhatxtarCs6" style="display:none;"></textarea>
+    </form>
+    <!--<nav><ul>--><!--</ul></nav>-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    <p style="position:fixed;top:888px;left:16px;font-size:12px;">©omer 2025</p>
+</body>
+</html>
